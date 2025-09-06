@@ -68,7 +68,7 @@ span{
 	display: inline-block;
     height: 2px;             /* espessura da linha */
     background: var(--second-color);        /* cor da linha */
-    margin: 15vh 0;          /* espaçamento acima e abaixo */
+    margin: 5vh 0;          /* espaçamento acima e abaixo */
     width: 100%;             /* ocupa toda a largura */
 }
 
@@ -510,7 +510,7 @@ span.container-text {
 	}
 	.home{
 		grid-template-columns: 1fr;
-		height: 114vh;
+		height: auto;
 	}
 
 	.home-text{
