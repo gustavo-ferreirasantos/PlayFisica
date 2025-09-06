@@ -13,7 +13,7 @@
 	--second-color: #858585;
 	--bg-color: #fffbf6;
 	--big-font: 4.5rem;
-	--medium-font: 2.5rem
+	--medium-font: 2.5rem;
 	--small-font: 1rem;
 	--h2-font: 2.6rem;
 	--p-font: 1.1rem;
@@ -533,30 +533,23 @@ span.container-text {
 		height: auto;
 		max-width: 500px;
 		width: 100%;
-	}.videos-text {
+	}
+	.videos-text {
 		grid-template-columns: 1fr; /* uma coluna no celular */
 	}
 	.developer p { 
 		font-size: 0.9rem;
 	}
 	.developer a{ 
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 }
-
-@media (max-height: 768px){
-	.container{
-		margin-top: 150px;
-	}
-}
-
 
 
 .topicos {
   list-style: none; /* remove bullets padrão */
   padding-left: 0;
   font-size: var(--small-font);
-;
   font-weight: bold;
 }
 
