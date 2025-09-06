@@ -535,6 +535,9 @@ span.container-text {
 	.developer p { 
 		font-size: 0.8rem;
 	}	
+	.conteudos-box{
+		grid-template-columns: 1fr;
+	}
 }
 
 
