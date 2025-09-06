@@ -271,10 +271,7 @@ header.sticky{
 }
 .conteudos-box{
 	display: grid;
-	/*
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	*/
-	grid-template-columns: repeat(3, 1fr); /* sempre no máximo 3 colunas */
 	gap: 2rem;
 	align-items: center;
 	margin-top: 4rem;
@@ -535,9 +532,6 @@ span.container-text {
 	.developer p { 
 		font-size: 0.8rem;
 	}	
-	.conteudos-box{
-		grid-template-columns: 1fr;
-	}
 }
 
 
