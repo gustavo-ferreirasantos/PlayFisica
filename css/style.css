@@ -65,20 +65,13 @@ span{
   border-radius: 20px; 
 }
 .divisor {
-    border: 0;
+	display: inline-block;
     height: 2px;             /* espessura da linha */
     background: var(--second-color);        /* cor da linha */
-    margin: 5vh 0;          /* espaçamento acima e abaixo */
+    margin: 15vh 0;          /* espaçamento acima e abaixo */
     width: 100%;             /* ocupa toda a largura */
 }
 
-.divisor {
-    border: 0;
-    height: 2px;             /* espessura da linha */
-    background: var(--second-color);        /* cor da linha */
-    margin: 10vh 0;          /* espaçamento acima e abaixo */
-    width: 100%;             /* ocupa toda a largura */
-}
 
 
 
