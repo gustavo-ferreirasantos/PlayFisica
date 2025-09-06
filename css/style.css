@@ -538,10 +538,10 @@ span.container-text {
 		grid-template-columns: 1fr; /* uma coluna no celular */
 	}
 	.developer p { 
-		font-size: 0.9rem;
+		font-size: 0.8em;
 	}
 	.developer a{ 
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	}
 }
 
