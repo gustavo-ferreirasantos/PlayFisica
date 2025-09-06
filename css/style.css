@@ -508,9 +508,6 @@ span.container-text {
 	.navbar.open{
 		right: 0;
 	}
-	
-}
-@media (max-width: 820px){
 	:root{
 		--big-font: 3rem;
 		--small-font: 0.6rem;
@@ -539,10 +536,14 @@ span.container-text {
 	}.videos-text {
 		grid-template-columns: 1fr; /* uma coluna no celular */
 	}
-
-
-
+	.developer p { 
+		font-size: 0.9rem;
+	}
+	.developer a{ 
+		font-size: 0.8rem;
+	}
 }
+
 @media (max-height: 768px){
 	.container{
 		margin-top: 150px;
