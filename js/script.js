@@ -31,4 +31,4 @@ if (mediaMinQuery.matches) {
 }else{
 	sr.reveal('.home-img',{delay:200, origin:'bottom'});
 }
-sr.reveal('.container, .about, .menu, .contact',{delay:200, origin:'bottom'});
+sr.reveal('.container, .about, .menu, .contact, .modulos',{delay:200, origin:'bottom'});
