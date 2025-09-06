@@ -68,7 +68,7 @@ span{
 	display: inline-block;
     height: 2px;             /* espessura da linha */
     background: var(--second-color);        /* cor da linha */
-    margin: 5vh 0;          /* espaçamento acima e abaixo */
+    margin: 0vh 0;          /* espaçamento acima e abaixo */
     width: 100%;             /* ocupa toda a largura */
 }
 
@@ -134,7 +134,7 @@ span{
 /*Vídeos do Youtube*/
 
 .videos{
-	margin: 0;
+	margin: 3rem 0;
 	padding: 0;
 }
 .videos h1{
@@ -249,15 +249,14 @@ header.sticky{
 
 
 
-
-
 .modulos{
-	margin-top: 50px;
+	margin: 3rem 0.6rem;
+	padding: 0;
 }
+
 .modulos h1{
 	text-align: center;
 	font-size: var(--big-font);
-
 }
 
 .conteudos-tex h1{
@@ -272,7 +271,10 @@ header.sticky{
 }
 .conteudos-box{
 	display: grid;
+	/*
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	*/
+	grid-template-columns: repeat(3, 1fr); /* sempre no máximo 3 colunas */
 	gap: 2rem;
 	align-items: center;
 	margin-top: 4rem;
