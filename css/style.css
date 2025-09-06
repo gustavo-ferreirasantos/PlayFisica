@@ -114,7 +114,7 @@ span{
 .developer a {
     color: #333;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
@@ -538,7 +538,7 @@ span.container-text {
 		grid-template-columns: 1fr; /* uma coluna no celular */
 	}
 	.developer p { 
-		font-size: 0.8em;
+		font-size: 0.8rem;
 	}	
 }
 
