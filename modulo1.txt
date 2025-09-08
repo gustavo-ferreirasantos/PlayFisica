@@ -1,0 +1,30 @@
+
+  <!-- p5.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+	<!--Animações -->
+	<script src="js/unitCircle.js"></script>
+
+	
+
+
+	<section class="animation-section">
+		<h2 class="animation-title">Primeira Animação</h2>
+		<div id="animation1"></div>
+	</section>
+
+	<section class="animation-section">
+		<h2 class="animation-title">Segunda Animação</h2>
+		<div id="animation2"></div>
+	</section>
+
+
+  <details>
+    <summary>
+      <span class="toggle-text">Mostrar resposta</span>
+      <span class="arrow">▶</span>
+    </summary>
+    <div class="resposta">
+      <p>Aqui está a resposta em texto explicativo.</p>
+      <img src="https://via.placeholder.com/250" alt="Exemplo de imagem">
+    </div>
+  </details>

@@ -1,0 +1,101 @@
+
+
+/*Mostrar Resposta*/
+
+  details {
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* mantém bordas arredondadas */
+  }
+
+  /* Cabeçalho fechado */
+  summary {
+    cursor: pointer;
+    padding: 1rem;
+    background: --main-color;
+    color: #fff; /* texto branco */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+	text-align: center;
+  }
+
+  summary::marker {
+    display: none; /* remove marcador padrão */
+  }
+
+  /* Quando abre */
+  details[open] summary {
+    background: #e6e6e6; /* cinza claro */
+    color: #302e29; /* texto escuro */
+  }
+
+  /* Ícone da seta */
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  details[open] .arrow {
+    transform: rotate(90deg);
+  }
+
+  /* Conteúdo da resposta */
+  .resposta {
+    background: #f5f5f5; /* cinza bem claro */
+    padding: 1rem;
+    line-height: 1.5;
+    color: #302e29;
+  }
+
+  .resposta img {
+    max-width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+  }
+
+
+
+
+
+
+
+
+
+  /*P5.js*/
+
+.animation-section {
+  /*background-color: #716c6c; */
+  padding: 40px 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  border-radius: 10px;
+}
+
+.animation-title {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: var(--h2-font);
+}
+
+.animation1 canvas {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+}
+
+.animation2 canvas {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+}

@@ -9,6 +9,29 @@ window.addEventListener("scroll", function(){
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
+
+
+/*
+// Trocar texto de "Mostrar" <-> "Esconder"
+document.querySelectorAll("details").forEach(detail => {
+const toggleText = detail.querySelector(".toggle-text");
+
+detail.addEventListener("toggle", () => {
+	if (detail.open) {
+		toggleText.textContent = "Esconder resposta";
+		toggleText.s
+	} else {
+		toggleText.textContent = "Mostrar resposta";
+		}
+	});
+});
+*/
+
+
+
+
+
+
 menu.onclick = () => {
 	menu.classList.toggle('bx-x');
 	navbar.classList.toggle('open');
