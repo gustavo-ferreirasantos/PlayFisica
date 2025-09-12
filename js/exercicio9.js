@@ -1,11 +1,10 @@
-let   y_r = 400,y_t1_1 = 500,y_t1_2 = 550,
-y_t1_3 = 550,y_t2_1 = 500,y_t2_2 = 550,
-y_t2_3 = 550,y_t3_1 = 350,y_t3_2 = 400,y_t3_3 = 400;
+let   y_r = 400,y_t1_1 = 500,y_t1_2 = 550,y_t1_3 = 550,y_t2_1 = 500,y_t2_2 = 550,y_t2_3 = 550,y_t3_1 = 350,y_t3_2 = 400,y_t3_3 = 400;
 let y_c1=550,y_c2=550,y_c3=550;
 let velocidade=0, aceleracao=0.3;
 let velocidade2=0, aceleracao2=0.1;
 function setup() {
-  createCanvas(800,700);
+  let cnv = createCanvas(800,700);
+  cnv.parent(document.querySelector('#animation9'));
 }
 
 function draw() {
@@ -69,4 +68,5 @@ function draw() {
   y_c1 = y_c1 + velocidade2;
   y_c2 = y_c2 + velocidade2;
   y_c3 = y_c3 + velocidade2;
+
 }
