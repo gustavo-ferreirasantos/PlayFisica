@@ -230,7 +230,6 @@ section{
 
 
 .btn-animacao {
-  position: absolute;
   left: 10px;   /* lado esquerdo da div */
   top: 50%;     /* centraliza verticalmente */
   transform: translateY(-50%);
