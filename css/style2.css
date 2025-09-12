@@ -230,24 +230,35 @@ section{
 
 
 .btn-animacao {
-  left: 10px;   /* lado esquerdo da div */
-  top: 50%;     /* centraliza verticalmente */
+  position: absolute;
+  left: 10px;          /* encostado à esquerda da div */
+  top: 50%;            /* centraliza verticalmente */
   transform: translateY(-50%);
-  background: #0077ff;
-  color: white;
+
+  width: 100px;         /* largura do círculo */
+  height: 100px;        /* altura do círculo */
+  border-radius: 50%;  /* deixa redondo */
+
+  background: #f0f0f0; /* cinza claro */
   border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+
+  display: flex;       /* centraliza o símbolo dentro */
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.2s;
 }
 
 
 .btn-animacao:hover {
-  background: #005ec4;
+  background: #e0e0e0;   /* cinza um pouco mais escuro */
+  transform: translateY(-50%) scale(1.1); /* cresce no hover */
 }
+
+
 
 /* Popup fundo */
 .popup {
@@ -266,8 +277,9 @@ section{
   position: relative;
   background: #fff;
   width: 80%;
-  max-width: 900px;
   height: 80%;
+  max-width: 900px;
+  max-height: 900px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -354,10 +366,12 @@ section{
 }
 .exercicios-img{
 	text-align: center;
+	position: relative; /* necessário para posicionar o botão dentro */
+  	display: inline-block;
 }
 .exercicios-img img{
 	height: auto;
-	width: 30%;
+	width: 50%;
 	margin: 0;
 	padding: 0;
 }
@@ -697,11 +711,12 @@ span.container-text {
 	}
 	
 }
-@media (max-width: 880px){
-	#menu-icon{
+@media (max-width: 880px) {
+	#menu-icon {
 		display: block;
 	}
-	.navbar{
+
+	.navbar {
 		position: absolute;
 		top: 100%;
 		right: -100%;
@@ -714,53 +729,70 @@ span.container-text {
 		padding: 180px 40px;
 		transition: all .40s ease;
 	}
-	.navbar a{
+
+	.navbar a {
 		display: block;
 		margin: 1.3rem 0;
 	}
-	.navbar.open{
+
+	.navbar.open {
 		right: 0;
 	}
-	:root{
+
+	:root {
 		--big-font: 3rem;
 		--small-font: 0.6rem;
 
 		--h2-font: 1.8rem;
 		transition: .20s;
 	}
-	.home{
+
+	.home {
 		grid-template-columns: 1fr;
 		height: auto;
 	}
 
-	.home-text{
+	.home-text {
 		padding-top: 50px;
 	}
-	.about{
+
+	.about {
 		grid-template-columns: 1fr;
 	}
-	.about-img{
+
+	.about-img {
 		text-align: center;
 	}
+
 	.videos-text {
-		grid-template-columns: 1fr; /* uma coluna no celular */
+		grid-template-columns: 1fr;
+		/* uma coluna no celular */
 	}
-	.developer p { 
-		font-size: 0.8rem;
-	}	
-	.developer a{
+
+	.developer p {
 		font-size: 0.8rem;
 	}
-	.about-img img{
+
+	.developer a {
+		font-size: 0.8rem;
+	}
+
+	.about-img img {
 		max-width: 250px;
 		align-items: center;
 		height: auto;
 		width: 100%;
 	}
-	.conteudo{
+
+	.conteudo {
 		padding: 1rem;
 	}
-}
+
+	.btn-animacao {
+		width: 50px;
+		height: 50px;
+	}
+} 
 
 
 .topicos {
@@ -771,20 +803,19 @@ span.container-text {
 }
 
 .topicos li {
-  position: relative;
-  padding-left: 15px;
-  margin-bottom: 10px;
+	position: relative;
+	padding-left: 15px;
+	margin-bottom: 10px;
 }
 
 .topicos li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;              /* posiciona no meio vertical */
-  transform: translateY(-50%); /* ajusta para centralizar perfeitamente */
-  width: 9px;
-  height: 9px;
-  background-color: #050505;
-  border-radius: 50%;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%; /* posiciona no meio vertical */
+	transform: translateY(-50%); /* ajusta para centralizar perfeitamente */
+	width: 9px;
+	height: 9px;
+	background-color: #050505;
+	border-radius: 50%;
 }
-

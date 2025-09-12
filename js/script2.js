@@ -31,7 +31,12 @@ detail.addEventListener("toggle", () => {
 
 
 function abrirPopup() {
-  document.getElementById("popup").style.display = "flex";
+  const popup = document.getElementById("popup");
+  const iframe = popup.querySelector("iframe");
+  // Recarrega o iframe sempre que abrir
+  iframe.src = iframe.src;
+
+  popup.style.display = "flex";
 }
 function fecharPopup() {
   document.getElementById("popup").style.display = "none";
