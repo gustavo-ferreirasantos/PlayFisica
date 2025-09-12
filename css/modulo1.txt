@@ -99,3 +99,59 @@
   max-width: 100%;
   height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*v1*/
+
+
+.exercicio-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #f9f9f9;
+}
+
+.exercicio-item h3 {
+  font-size: 1.5rem; /* menor que o h2 */
+  margin-bottom: 1rem;
+  color: var(--main-color);
+  text-align: left;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+details[open] .arrow {
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
+.arrow {
+  transition: 0.3s;
+}
+
+.resposta {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}

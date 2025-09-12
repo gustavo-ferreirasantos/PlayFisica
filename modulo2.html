@@ -1,134 +1,193 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Em construção — PlayFísica - Módulo 2</title>
-  <style>
-    :root{
-      --bg: #0f1724;
-      --card: #0b1220;
-      --accent: #ffb020;
-      --muted: #9aa4b2;
-      --glass: rgba(255,255,255,0.03);
-      --radius: 14px;
-      font-family: 'Raleway', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PlayFísica</title>
 
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      display:grid;
-      place-items:center;
-      background: linear-gradient(180deg,#071127 0%, #0f1724 100%);
-      color: #e6eef6;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding:24px;
-    }
+	<link rel="stylesheet" href="css/style2.css">
 
-    .card{
-      width:min(880px,96%);
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:36px;
-      display:flex;
-      gap:28px;
-      align-items:center;
-      box-shadow: 0 10px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
-      border:1px solid rgba(255,255,255,0.03);
-    }
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-    .emoji{
-      flex:0 0 160px;
-      height:160px;
-      border-radius:12px;
-      display:grid;
-      place-items:center;
-      background: linear-gradient(135deg, rgba(255,176,32,0.12), rgba(255,176,32,0.06));
-      font-size:68px;
-      color:var(--accent);
-      box-shadow: 0 8px 30px rgba(255,176,32,0.06);
-    }
-
-    .content{
-      flex:1 1 auto;
-    }
-
-    h1{
-      font-size:clamp(24px,4vw,42px);
-      margin-bottom:8px;
-      color:#fff;
-      letter-spacing: -0.6px;
-    }
-
-    p.lead{
-      color:var(--muted);
-      margin-bottom:18px;
-      font-size:clamp(14px,1.4vw,16px);
-    }
-
-    .bar{
-      height:12px;
-      background: linear-gradient(90deg, rgba(255,176,32,0.18), rgba(255,176,32,0.07));
-      border-radius:999px;
-      overflow:hidden;
-      position:relative;
-    }
-    .bar::after{
-      content:"";
-      position:absolute;
-      left:-40%;
-      top:0;bottom:0;
-      width:40%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
-      animation: shine 2.2s linear infinite;
-    }
-
-    @keyframes shine{
-      from{left:-40%}
-      to{left:140%}
-    }
-
-    .meta{
-      display:flex;
-      gap:12px;
-      margin-top:16px;
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    .btn{
-      margin-left:auto;
-      background:transparent;
-      border:1px solid rgba(255,255,255,0.06);
-      padding:8px 14px;
-      border-radius:10px;
-      color:var(--muted);
-      text-decoration:none;
-      font-weight:600;
-    }
-
-    @media (max-width:720px){
-      .card{flex-direction:column;align-items:stretch;padding:22px}
-      .emoji{width:100%;height:84px;border-radius:10px;font-size:44px}
-      .btn{margin:12px 0 0 auto}
-    }
-  </style>
 </head>
 <body>
-  <main class="card" role="main" aria-labelledby="titulo">
-    <div class="emoji" aria-hidden="true">🏗️</div>
-    <div class="content">
-      <h1 id="titulo">Em construção</h1>
-      <p class="lead">Esta página será construída em breve. Volte mais tarde para conferir os conteúdos do PlayFísica.</p>
+	<!-- header section -->
+	<header>
+		<!-- <a href="#" class="logo">Food<span>Fun</span></a> -->
+		<a href="#" style="border: 0;" class="logo"><img src="img/logo.png" width="80%" alt="logo"></a>
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#aulas">Aulas</a></li>
+			<li><a href="#material">Material</a></li>
+			<li><a href="#exercicios">Exercícios</a></li>
 
-      <div class="bar" aria-hidden="true" style="margin-bottom:6px"></div>
-      <div class="meta">
-        <div>status: <strong>em desenvolvimento</strong></div>
-        <a class="btn" href="index.html">Voltar ao início</a>
-      </div>
-    </div>
-  </main>
+		</ul>
+
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+	</header>
+
+	<!-- home section -->
+		<section class="home" id="home">
+			<div class="home-text">
+				<h1><span>Módulo 2:</span> MRU, MRUV, Atrito e resistência do ar</h1>
+			</div>
+
+			<div class="home-img">
+				<img src="img/home.png"  alt="home">
+			</div>
+		</section>
+
+		<hr class="divisor">
+
+		<section class="videos" id="aulas">
+			<h1>Aulas</h1>
+			<br>
+			<br>
+			<div class="videos-text">
+				<div>
+					<a class="thumbnail" href="https://www.youtube.com/watch?v=t2r3iS5aPlU" target="_blank" rel="noopener noreferrer">
+						<img  class="thumbnail" src="https://img.youtube.com/vi/t2r3iS5aPlU/maxresdefault.jpg" alt="Video1">
+					</a>
+					<p>  20 | Módulo 2: Variável e Atribuição no P5.js (PlayFísica)  </p>
+				</div>
+				<div>
+					<a href="https://www.youtube.com/watch?v=KCLq8rIOuDA" target="_blank" rel="noopener noreferrer">
+						<img class="thumbnail" src="https://img.youtube.com/vi/KCLq8rIOuDA/maxresdefault.jpg" alt="Video2"">
+					</a>
+					<p>  21 | Módulo 2: Operações Matemáticas, Operações Comparativas e <br> o If no P5.js (PlayFísica)  </p>
+				</div>
+				<div>
+					<a  href="https://www.youtube.com/watch?v=U5pWI95cydM" target="_blank" rel="noopener noreferrer">
+						<img class="thumbnail" src="https://img.youtube.com/vi/U5pWI95cydM/maxresdefault.jpg" alt="Video3">
+					</a>
+					<p class="">  22 | Módulo 2: Movimento Retilíneo Uniforme no P5.js (PlayFísica)   </p>
+				</div>
+				<div>
+					<a href="https://www.youtube.com/watch?v=qh-2ebjl5cw" target="_blank" rel="noopener noreferrer">
+						<img class="thumbnail" src="https://img.youtube.com/vi/qh-2ebjl5cw/maxresdefault.jpg" alt="Video4">
+					</a>
+					<p>  23 | Módulo 2: Mais Aplicações do MRU no P5.js (PlayFísica)  </p>
+				</div>
+								<div>
+					<a href="https://www.youtube.com/watch?v=dhf-9c3J9BM" target="_blank" rel="noopener noreferrer">
+						<img class="thumbnail" src="https://img.youtube.com/vi/dhf-9c3J9BM/maxresdefault.jpg" alt="Video4">
+					</a>
+					<p>   24 | Módulo 2: Desenhando com Movimento usando Linguagem de Programação (Exercício 8 - PlayFísica)   </p>
+				</div>
+			</div>
+		</section>
+
+	<hr class="divisor">
+
+		<!-- home section -->
+		<section class="Material" id="material">
+			<div class="material-text">
+				<h1>Materiais de aulas</h1>
+
+
+				<h2>1. Variáveis</h2>
+				<div class="material-img">
+            		<img src="img/MateriaisDasAulas/11 -Variável e Atribuição.png"  alt="home">
+          		</div>
+				<h2>2.Operações com IF</h2>
+				<div class="material-img">
+            		<img src="img/MateriaisDasAulas/12 - Operações e If.png"  alt="home">
+          		</div>
+				<h2>3.MRU</h2>
+				<div class="material-img">
+            		<img src="img/MateriaisDasAulas/13 - MRU.png"  alt="home">
+          		</div>
+          
+          
+					
+			</div>
+		</section>
+
+
+		<hr class="divisor">
+
+
+
+
+
+		<section class="exercicios" id="exercicios">
+		<div class="exercicios-text">
+			<h1>Exercícios</h1>
+
+			<!-- Exemplo de exercício -->
+			<div class="exercicio-item">
+			<h2>Exercício 7</h2>
+			<div class="exercicios-img">
+				<img src="img/MateriaisDasAulas/10.3 - Exercício 7.png" alt="Exercício 8">
+			</div>
+
+			<details>
+				<summary>
+				<span class="toggle-text">Mostrar resposta</span>
+				<span class="arrow">▶</span>
+				</summary>
+				<div class="resposta">
+					<div class="exercicios-img">
+						<img src="img/code1.png" alt="Exercício 8">
+					</div>
+				</div>
+			</details>
+			</div>
+
+			<div class="exercicio-item">
+			<h2>Exercício 8</h2>
+			<div class="exercicios-img">
+				<img src="img/MateriaisDasAulas/13.2 - Exercício 8.png" alt="Exercício 8">
+			</div>
+
+			<details>
+				<summary>
+				<span class="toggle-text">Mostrar resposta</span>
+				<span class="arrow">▶</span>
+				</summary>
+				<div class="resposta">
+					<div class="exercicios-img">
+						<img src="img/code.png" alt="Exercício 8">
+					</div>
+				</div>
+			</details>
+			</div>
+		</div>
+		</section>
+
+
+
+
+			
+		<div class="last-text">
+			<p>© Developed 2025 by Gustavo</p>
+		</div>
+
+	<!-- Bibliotecas do p5.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+	<script src="js/exercicio8.js"></script>
+
+
+
+	<!-- scroll top -->
+	<a href="#home" class="scroll-top">
+		<i class='bx bx-up-arrow-alt' ></i>
+	</a>
+
+	<!-- custom scrollreveal link -->
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+	
+	<!-- custom js link -->
+	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
+
+
+
