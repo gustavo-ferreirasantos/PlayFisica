@@ -10,6 +10,18 @@
   <body>
     <main>
     </main>
-    <script src="sketch.js"></script>
+    <script>
+      if (window.innerWidth <= 600) {
+        // Para celulares
+        var script = document.createElement('script');
+        script.src = 'sketchcelular.js';
+        document.body.appendChild(script);
+      } else {
+        // Para desktop
+        var script = document.createElement('script');
+        script.src = 'sketch.js';
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>

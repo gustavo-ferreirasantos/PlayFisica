@@ -12,8 +12,8 @@ let originalWidth = 800;
 let originalHeight = 700;
 
 // Novo tamanho
-let newWidth = 684.7;
-let newHeight = 600;
+let newWidth = 330;
+let newHeight = 377;
 
 // Fatores de escala
 let scaleX = newWidth / originalWidth;
