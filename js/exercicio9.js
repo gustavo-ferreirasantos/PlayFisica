@@ -73,5 +73,9 @@ function draw() {
   y_c3 = y_c3 + velocidade2;
 
 
-
+  function keyPressed() {
+  if (key === 's') {
+    saveGif('mySketch', 5, { delay: 1 });
+  }
+}
 }
