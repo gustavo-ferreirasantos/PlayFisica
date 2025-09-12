@@ -61,14 +61,7 @@ function draw() {
   y_t3_3 = y_t3_3 - velocidade;
   
 
-    // Reset da casa quando sair da tela
-  if(y_r + 150 < 0){
-    y_r = 400;
-    y_t1_1 = 500; y_t1_2 = 550; y_t1_3 = 550;
-    y_t2_1 = 500; y_t2_2 = 550; y_t2_3 = 550;
-    y_t3_1 = 350; y_t3_2 = 400; y_t3_3 = 400;
-    velocidade = 0;
-  }
+
 
   fill(100,150);
   circle (265,y_c1,50);
@@ -81,9 +74,4 @@ function draw() {
 
 
 
-    // Reset dos círculos quando saem da tela
-  if(y_c1 - 25 > height){ // 25 é o raio
-    y_c1 = 550; y_c2 = 550; y_c3 = 550;
-    velocidade2 = 0;
-  }
 }
