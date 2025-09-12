@@ -64,6 +64,23 @@ span{
   height: auto;          /* mantém proporção */
   border-radius: 20px; 
 }
+.thumbnail:hover {
+transform: scale(1.2); /* efeito leve de zoom ao passar o mouse */
+}
+
+
+
+.borrar{
+	filter: blur(10px);
+}
+
+
+
+
+
+
+
+
 .divisor {
 	display: inline-block;
     height: 2px;             /* espessura da linha */
@@ -537,7 +554,7 @@ span.container-text {
 		grid-template-columns: 1fr; /* uma coluna no celular */
 	}
 	.developer p { 
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}	
 	.developer a{
 		font-size: 0.8rem;
